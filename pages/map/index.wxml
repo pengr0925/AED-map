@@ -1,0 +1,32 @@
+<view class="page">
+  <!-- 顶部搜索条（点击打开地图选点） -->
+  <view class="search" bindtap="choosePlace">
+    <text class="icon">🔍</text>
+    <!-- <text class="placeholder">{{ searchText }}</text> -->
+    <input class="ipt" placeholder="请输入位置信息"
+         value="{{keyword}}" bindinput="onInput" bindconfirm="onSearch" confirm-type="search" />
+  </view>
+
+  <!-- 腾讯底图 -->
+  <map id="map" class="map"
+     latitude="{{center.latitude}}" 
+     longitude="{{center.longitude}}"
+     scale="{{scale}}" 
+     markers="{{markers}}"
+     show-location="true" 
+     style="position:absolute;inset:0;" 
+     bindmarkertap="onMarkerTap">
+    <!-- 左下角定位按钮 -->
+    <cover-view class="locate-btn" bindtap="onLocateTap">
+    <cover-image class="icon" src="/assets/my-locate.png"></cover-image>
+  </cover-view>
+  
+  </map>
+
+  <!-- 右侧悬浮按钮 -->
+  <view class="fab">
+    <button class="fab-btn" size="mini" bindtap="locateMe">距我最近</button>
+    <button class="fab-btn" size="mini" bindtap="goAdd">添加仪器</button>
+  </view>
+
+</view>

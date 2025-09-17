@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "pages/map/index",
+    "pages/add/index",
+    "pages/lesson/index",
+    "pages/cpr/index",
+    "pages/me/index"
+  ],
+  "window": {
+    "navigationBarTitleText": "AED地图",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "用于定位并计算距离最近的 AED"
+    }
+  },
+  "requiredPrivateInfos": [
+    "getLocation",
+    "chooseLocation"
+  ],
+  "style": "v2",
+  "tabBar": {
+    "color": "#666666",
+    "selectedColor": "#07c160",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/map/index",
+        "text": "AED地图",
+        "iconPath": "assets/tab/map.png",
+        "selectedIconPath": "assets/tab/map_s.png"
+      },
+      {
+        "pagePath": "pages/lesson/index",
+        "text": "AED教程",
+        "iconPath": "assets/tab/book.png",
+        "selectedIconPath": "assets/tab/book_s.png"
+      },
+      {
+        "pagePath": "pages/cpr/index",
+        "text": "心肺复苏",
+        "iconPath": "assets/tab/doc.png",
+        "selectedIconPath": "assets/tab/doc_s.png"
+      },
+      {
+        "pagePath": "pages/me/index",
+        "text": "个人中心",
+        "iconPath": "assets/tab/me.png",
+        "selectedIconPath": "assets/tab/me_s.png"
+      }
+    ]
+  }
+}

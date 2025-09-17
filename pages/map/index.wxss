@@ -1,0 +1,34 @@
+page { background: #f7f7f7; }
+.page { position: relative; height: 100vh; }
+.search {
+  position: absolute; top: 16rpx; left: 24rpx; right: 24rpx; z-index: 10;
+  height: 72rpx; border-radius: 36rpx; background: #fff; box-shadow: 0 6rpx 20rpx rgba(0,0,0,.06);
+  display: flex; align-items: center; padding: 0 24rpx;
+}
+.search .icon { margin-right: 12rpx; }
+.search .placeholder { color: #999; }
+/* .map { position: absolute; top: 0; bottom: 0; left: 0; right: 0; } */
+.map { position:absolute; top:0; right:0; bottom:0; left:0; width:100%; height:100%; }
+.locate-btn{
+  position: absolute;
+  left: 24rpx;
+  bottom: 100rpx;        /* 视你的底部栏高度调整，比如 140~220rpx */
+  width: 66rpx;
+  height: 66rpx;
+  border-radius: 9999rpx;
+  background: #fff;
+  box-shadow: 0 8rpx 24rpx rgba(0,0,0,.15);
+  display: flex; align-items: center; justify-content: center;
+}
+.icon{ width: 48rpx; height: 48rpx; }
+
+.fab {
+  position: absolute; right: 20rpx; top: 200rpx; z-index: 11;
+  display: flex; flex-direction: column; gap: 16rpx;
+}
+.fab-btn {
+  background: #fff; color: #333; border: 1rpx solid #eee;
+  border-radius: 40rpx; padding: 14rpx 22rpx;
+  box-shadow: 0 6rpx 20rpx rgba(0,0,0,.08);
+}
+.ipt { flex:1; height:100%; }
